@@ -3,6 +3,7 @@ os: windows
 files:
   - source: \
     destination: C:\Users\Administrator\nodejs-express-on-aws-ec2
+    overwrite: true
 hooks:
   ApplicationStop:
     - location: \scripts\application_stop.bat
