@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 
 app.get("/products", (req, res) => {
   res.send([
-    {s
+    {
       productId: "101",
       price: 100,
     },

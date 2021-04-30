@@ -8,9 +8,12 @@ hooks:
   ApplicationStop:
     - location: \scripts\application_stop.bat
       timeout: 300
+      runas: Administrator
   BeforeInstall:
     - location: \scripts\before_install.bat
       timeout: 300
+      runas: Administrator
   ApplicationStart:
     - location: \scripts\application_start.bat
       timeout: 300
+      runas: Administrator
