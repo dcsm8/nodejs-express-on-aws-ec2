@@ -1,18 +1,15 @@
 version: 0.0
-os: linux
+os: windows
 files:
-  - source: /
-    destination: /home/ec2-user/express-app
+  - source: \
+    destination: C:\Users\Administrator\nodejs-express-on-aws-ec2
 hooks:
   ApplicationStop:
-    - location: scripts/application_stop.sh
-      timeout: 300
-      runas: ec2-user
+    - location: \scripts\application_stop.bat
+      timeout: 900
   BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
-      runas: ec2-user
+    - location: \scripts\before_install.bat
+      timeout: 900
   ApplicationStart:
-    - location: scripts/application_start.sh
-      timeout: 300
-      runas: ec2-user
+    - location: \scripts\application_start.bat
+      timeout: 900
