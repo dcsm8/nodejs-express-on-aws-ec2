@@ -4,9 +4,6 @@ files:
   - source: \
     destination: C:\Users\Administrator\nodejs-express-on-aws-ec2
 hooks:
-  ApplicationStop:
-    - location: \scripts\application_stop.bat
-      timeout: 300
   BeforeInstall:
     - location: \scripts\before_install.bat
       timeout: 300
