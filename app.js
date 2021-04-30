@@ -4,13 +4,13 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   res.send(
-    "<h1>Express Demo App</h1> <h4>Message: Success</h4> <p>Version 0.0.7</p>"
+    "<h1>Express Demo App</h1> <h4>Message: Success</h4> <p>Version 0.0.8</p>"
   );
 });
 
 app.get("/products", (req, res) => {
   res.send([
-    {
+    {s
       productId: "101",
       price: 100,
     },
