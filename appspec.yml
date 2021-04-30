@@ -6,10 +6,10 @@ files:
 hooks:
   ApplicationStop:
     - location: \scripts\application_stop.bat
-      timeout: 900
+      timeout: 300
   BeforeInstall:
     - location: \scripts\before_install.bat
-      timeout: 900
+      timeout: 300
   ApplicationStart:
     - location: \scripts\application_start.bat
-      timeout: 900
+      timeout: 300
